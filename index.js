@@ -6,7 +6,7 @@ function mondayWork(activity="go to the office"){
     return `This Monday, I will ${activity}.`
 }
 
-let wrapAdjective = function(style="*"){
+function wrapAdjective(style="*"){
     return function (adjective="special") {
         return `You are ${style}${adjective}${style}!`
     }
@@ -27,7 +27,7 @@ const Calculator={
     }
 }
 
-let actionApplyer=function(startInt, funcArray){
+function actionApplyer(startInt, funcArray){
    let a=startInt
    for (let i=0;i<funcArray.length;i++){
        a=funcArray[i](a)
